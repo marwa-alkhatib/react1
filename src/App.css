@@ -3,3 +3,143 @@
   padding: 0;
   box-sizing: border-box;
 }
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #eef5ff;
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  width: 90%;
+  max-width: 950px;
+  min-height: 550px;
+  margin: 50px auto;
+  padding: 15px;
+  background-color: white;
+  border-radius: 12px;
+  display: flex;
+  gap: 70px;
+}
+
+/* Sidebar */
+
+.sidebar {
+  width: 270px;
+  flex-shrink: 0;
+  padding: 35px 25px;
+  border-radius: 10px;
+  background-color: #483eff;
+  background-image: url("./assets/bg-sidebar-desktop.svg");
+  background-size: cover;
+  background-position: center;
+}
+
+.step {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 25px;
+  color: white;
+}
+
+.step span {
+  width: 35px;
+  height: 35px;
+  border: 1px solid white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.step:first-child span {
+  background-color: #bfe2fd;
+  color: #02295a;
+  border: none;
+}
+
+.step p {
+  font-size: 12px;
+  color: #d6d9e6;
+}
+
+.step strong {
+  display: block;
+  color: white;
+  font-size: 13px;
+  margin-top: 4px;
+}
+
+/* Form */
+
+.form-content {
+  flex: 1;
+  padding: 25px 40px 20px 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-header h1 {
+  color: #02295a;
+  font-size: 30px;
+  margin-bottom: 10px;
+}
+
+.form-header p {
+  color: #9699ab;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Inputs */
+
+.inputs {
+  display: flex;
+  flex-direction: column;
+  margin-top: 25px;
+}
+
+.inputs label {
+  color: #02295a;
+  font-size: 13px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.inputs input {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #d6d9e6;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  outline: none;
+}
+
+.inputs input:focus {
+  border-color: #483eff;
+}
+
+.inputs input::placeholder {
+  color: #9699ab;
+}
+
+/* Button */
+
+.button-container {
+  margin-top: auto;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.button-container button {
+  padding: 13px 22px;
+  background-color: #02295a;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
